@@ -6,9 +6,9 @@ Welcome to the Music Recommendation App! This Node.js and Express project allows
 
 - `app.js`: Server file containing the main logic for handling HTTP requests, integrating with the MySQL Database, and serving static files.
 - `public/`: Folder containing static files such as images, CSS, and JS files.
+    - `index.html`: Main HTML file for the application home page.
 - `views/`: Folder containing ejs files
     - `index.ejs`: JavaScript templating language for generating HTML with plain JavaScript. 
-- `MUCE.html`: Main HTML file for the application home page.
 
 ## Features
 

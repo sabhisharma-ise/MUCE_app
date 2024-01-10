@@ -1,5 +1,4 @@
 const express = require('express');
-const axios = require('axios');
 const mysql = require('mysql');
 
 require('dotenv').config();
@@ -23,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static( __dirname + "/public/" ));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/MUCE.html');
+  res.sendFile('index.html', {root: path.join(__dirname, 'public')});
 });
 
 app.get('/getRecommendations', (req, res) => {
