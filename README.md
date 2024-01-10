@@ -15,3 +15,36 @@ Welcome to the Music Recommendation App! This Node.js and Express project allows
 - User Input: Users can specify their preferred genre and artist to get personalized music recommendations.
 - Database: The app uses a MySQL database to store and retrieve song information.
 - Responsive Design: The application is designed to work on various devices.
+
+## Getting Started
+
+1. **Clone the repository:**
+   ```git clone https://github.com/your-username/your-music-recommendation-app.git 
+      cd your-music-recommendation-app```
+
+2. **Install dependencies:**
+
+    ```npm install```
+
+3. **Set up the MySQL database:**
+
+- Create a MySQL database named my-project.
+- Import the songs.sql file into the my-project database.
+
+4. **Configure the database connection:**
+
+- Open the app.js file.
+- Update the database connection details:
+```const con = mysql.createConnection({
+  host: 'localhost',
+  user: 'your-username',
+  password: 'your-password',
+  database: 'my-project',
+});```
+
+5. **Run the application:**
+
+```npm start```
+
+The app will be accessible at http://localhost:3000.
+
