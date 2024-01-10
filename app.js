@@ -3,12 +3,13 @@ const mysql = require('mysql');
 
 require('dotenv').config();
 
+const db_host = process.env.DB_Host;
 const db_user = process.env.DB_User;
 const db_pass = process.env.DB_Pass;
 const db_project = process.env.DB_Project;
 
 var con = mysql.createConnection({
-  host: "localhost",
+  host: db_host,
   user: db_user,
   password: db_pass,
   database: db_project
