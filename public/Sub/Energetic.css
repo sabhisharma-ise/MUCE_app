@@ -1,0 +1,32 @@
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    }
+
+h1{
+    font-weight: 700;
+    font-family:  Calibri;
+    font-size: 800%;
+    color: rgb(250, 230, 230);
+  }
+
+.ENERGETIC{
+animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+
+table,th {
+    padding: 0px;
+}
+
+tr,td{
+    padding: 20px;
+}

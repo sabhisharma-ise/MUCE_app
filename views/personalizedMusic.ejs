@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Music</title>
+    <link rel="stylesheet" href="Home/MUCE.css">
+</head>
+
+<body onload="updateArtists()">
+
+    <div class="parallax"></div>
+
+    <h2 class="heading">Personalized Music</h2>
+
+    <div class="content">
+        
+        <form action="/getRecommendations" method="POST"  id="musicForm">
+
+            <label for="genre">Genre:</label>
+            <!-- <input type="text" id="genre" name="genre" required> -->
+            <select id="genre" name="genre" onchange="updateArtists()">
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Rap">Rap</option>
+                <option value="Pop">Pop</option>
+                <option value="Blues">Blues</option>
+                <option value="Hard Rock">Hard Rock</option>
+                <option value="Vocal Jazz">Vocal Jazz</option>
+                <option value="Hip-Hop">Hip-Hop</option>
+                <option value="Electric Blues">Electric Blues</option>
+            </select>
+
+            <br>
+
+            <label for="artist">Artist:</label>
+            <!-- <input type="text" id="artist" name="artist" required> -->
+            <select id="artist" name="artist">
+                <!-- Artists for Rock genre -->
+                <option value="Queen">Queen</option>
+                <option value="Eagles">Eagles</option>
+
+                <!-- Artists for Jazz genre -->
+                <option value="Miles Davis">Miles Davis</option>
+                <option value="Dave Brubeck Quartet">Dave Brubeck Quartet</option>
+
+                <!-- Artists for Rap genre -->
+                <option value="Eminem">Eminem</option>
+                <option value="Travis Scott">Travis Scott</option>
+
+                <!-- Artists for Pop genre -->
+                <option value="Michael Jackson">Michael Jackson</option>
+                <option value="Madonna">Madonna</option>
+
+                <!-- Artists for Blues genre -->
+                <option value="Robert Johnson">Robert Johnson</option>
+                <option value="T-Bone Walker">T-Bone Walker</option>
+
+                <!-- Artists for Hard Rock genre -->
+                <option value="Guns N' Roses">Guns N' Roses</option>
+
+                <!-- Artists for Vocal Jazz genre -->
+                <option value="Nat King Cole">Nat King Cole</option>
+
+                <!-- Artists for Hip-Hop genre -->
+                <option value="Jay-Z ft. Alicia Keys">Jay-Z ft. Alicia Keys</option>
+
+                <!-- Artists for Electric Blues genre -->
+                <option value="Albert King">Albert King</option>
+            </select>
+            <br>
+            <button type="submit">Explore Music</button>
+        </form>
+    </div>
+
+    <script>
+        function updateArtists() {
+
+            // Get the selected genre
+            var selectedGenre = document.getElementById("genre").value;
+
+            // Get the artist dropdown
+            var artistDropdown = document.getElementById("artist");
+
+            // Clear existing options
+            artistDropdown.innerHTML = "";
+
+            // Add artists based on the selected genre
+            switch (selectedGenre) {
+                case "Rock":
+                    artistDropdown.innerHTML += "<option value='Queen'>Queen</option>";
+                    artistDropdown.innerHTML += "<option value='Eagles'>Eagles</option>";
+                    break;
+                case "Jazz":
+                    artistDropdown.innerHTML += "<option value='Miles Davis'>Miles Davis</option>";
+                    artistDropdown.innerHTML += "<option value='Dave Brubeck Quartet'>Dave Brubeck Quartet</option>";
+                    break;
+                case "Rap":
+                    artistDropdown.innerHTML += "<option value='Eminem'>Eminem</option>";
+                    artistDropdown.innerHTML += "<option value='Travis Scott'>Travis Scott</option>";
+                    break;
+                case "Pop":
+                    artistDropdown.innerHTML += "<option value='Michael Jackson'>Michael Jackson</option>";
+                    artistDropdown.innerHTML += "<option value='Madonna'>Madonna</option>";
+                    break;
+                case "Blues":
+                    artistDropdown.innerHTML += "<option value='Robert Johnson'>Robert Johnson</option>";
+                    artistDropdown.innerHTML += "<option value='T-Bone Walker'>T-Bone Walker</option>";
+                    break;
+                case "Hard Rock":
+                    artistDropdown.innerHTML += "<option value='Guns N' Roses'>Guns N' Roses</option>";
+                    break;
+                case "Vocal Jazz":
+                    artistDropdown.innerHTML += "<option value='Nat King Cole'>Nat King Cole</option>";
+                    break;
+                case "Hip-Hop":
+                    artistDropdown.innerHTML += "<option value='Jay-Z ft. Alicia Keys'>Jay-Z ft. Alicia Keys</option>";
+                    break;
+                case "Electric Blues":
+                    artistDropdown.innerHTML += "<option value='Albert King'>Albert King</option>";
+                    break;   
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+
+h1{color: rgb(250, 230, 230);
+    font-family: calibri;
+    font-size: 1000%;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+}
+
+h2{color: rgb(250, 230, 230);
+    font-family: calibri;
+    font-size: 300%         ;
+    position: absolute;
+    top: 48%;
+    left: 38%;
+}
+
+
+h3{color: rgb(250, 230, 230);
+    font-family: calibri;
+    font-size: 200%         ;
+}
+
+
+body {
+        margin: 0;
+     }
+
+.image-grid {
+                --gap: 16px;
+                --num-cols: 4;
+                --row-height: 800px;
+
+                box-sizing: border-box;
+                padding: var(--gap);
+
+                display: grid;
+                grid-template-columns: repeat(var(--num-cols), 1fr);
+                grid-auto-rows: var(--row-height);
+                gap: var(--gap);
+            }
+
+
+
+.fade-in-text {
+                animation: fadeIn 3s;
+              }
+
+@keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+                  }
+
+body, html {
+                height: 100%;
+            }
+
+.parallax {
+                background-image: url(Media/background.jpg);
+                height: 100%; 
+                width: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+          }
+
+/* Changes made by Sabhi in Styles of MUCE.html*/
+
+.clickable-text {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with 50% opacity */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+
+  .clickable-text {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.5s ease, background-color 0.5s ease, transform 0.5s ease; /* Adjust the transition duration for a smoother effect */
+    display: inline-block; 
+  }
+
+  .clickable-text:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background color on hover */
+    color: white;
+  }
+
+  .groove-link {
+    font-size: 16px; /* Set the initial font size */
+    transition: font-size 0.2s; /* Add a smooth transition effect */
+  }
+
+  /* Adjust the font size on hover */
+  .groove-link:hover {
+    font-size: 18px; /* Set the font size on hover */
+  }
+
+h1, h2 {
+  margin: 0; /* Remove default margin to prevent spacing issues */
+}
+
+.guitar-icon {
+  float: right;
+  margin-left: 40px; /* Adjust the spacing between text and icon */
+  font-size: 100px;
+}
+
+/* Styles for personalizedMusic.ejs */
+.heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Place it above the background */
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Place it above the background */
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    color: rgb(250, 230, 230);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24pt;
+    font-weight: bolder;
+    /* display: block; */
+
+    margin-top: 20px;
+}
+
+/* Apply styles to select element (dropdown) */
+select {
+    height: 30px;
+    font-size: 14pt;
+
+    border: none;
+    outline: none;
+    background-color: rgba(255, 223, 194, 0.997);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 4px solid #3e3c7c;
+    color: #313131;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    padding-block: 3px;
+    padding-inline: 10px;
+
+    margin: 10px 0 10px 10px;
+}
+
+/* Style options within the dropdown */
+select option {
+    background-color: rgba(255, 223, 194, 0.997);
+    color: #313131;
+    font-weight: 300;
+}
+
+/* input {
+    height: 30px;
+    font-size: 14pt;
+
+    border: none;
+    outline: none;
+    background-color: rgba(255, 223, 194, 0.997);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 4px solid #3e3c7c;
+    color: #313131;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    padding-block: 3px;
+    padding-inline: 10px;
+    
+    margin-top: 10px;
+} */
+
+button {
+    display: block;
+    margin: 0 auto;
+
+    height: 32px;
+    font-size: 10pt;
+
+    border: none;
+    outline: none;
+    background-color: rgba(255, 223, 194, 0.997);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 4px solid #3e3c7c;
+    color: #313131;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    padding-inline: 10px;
+    cursor: pointer;
+    
+    margin-top: 30px;
+}
+
+button:hover {
+    transform: translateY(4px);
+}
+
+/* iFrame: To display side-by-side */
+.iframe-container {
+    margin-top: 150px;
+    display: flex;
+    gap: 26px; /* Adjust the gap between iframes as needed */
+}
