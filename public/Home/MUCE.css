@@ -214,7 +214,7 @@ button:hover {
 
 /* iFrame: To display side-by-side */
 .iframe-container {
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     gap: 26px; /* Adjust the gap between iframes as needed */
 }
@@ -222,15 +222,15 @@ button:hover {
 /* Styles for personalizedMusic.ejs */
 .heading2 {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1; /* Place it above the background */
 }
 
-
 .submitBtn {
-  height: 35px;
-  font-size: 12pt;
+  margin-top: 30px;
+  height: 33px;
+  font-size: 11pt;
 }

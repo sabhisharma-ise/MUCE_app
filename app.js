@@ -4,10 +4,11 @@ const mysql = require('mysql');
 require('dotenv').config();
 
 var con = mysql.createConnection({
-  host: "localhost",
+  host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT
 });
 
 const app = express();
@@ -34,7 +35,7 @@ app.post('/getRecommendations', (req, res) => {
     console.log("Connected!");
 
     query = `SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
-    spotify_link AS Spotify FROM songs WHERE artist = ${inputArtist} AND genre = ${inputGenre};`
+    spotify_link AS Spotify FROM songs WHERE artist = '${inputArtist}' AND genre = '${inputGenre}';`
 
     // SQL Query
     con.query(query, async function (err, result, fields) {
@@ -99,10 +100,11 @@ app.post('/getRecommendations', (req, res) => {
     con.end(function (err) {
       if (err) { console.log("Error ending the connection:", err); }
       con = mysql.createConnection({
-        host: "localhost",
+        host: process.env.DB_HOST,
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME
+        database: process.env.DB_NAME,
+        port: process.env.DB_PORT
       });
     });
   });
