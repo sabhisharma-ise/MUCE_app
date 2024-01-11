@@ -51,7 +51,7 @@ const con = mysql.createConnection({
 5. **Run the application:**
 
 ```bash
-npm run dev
+node app.js
 ```
 
 The app will be accessible at http://localhost:3000.
