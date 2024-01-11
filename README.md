@@ -44,13 +44,14 @@ const con = mysql.createConnection({
   user: 'your-username',
   password: 'your-password',
   database: 'my-project',
+  port: 'port-no'
 });
 ```
 
 5. **Run the application:**
 
 ```bash
-npm start
+npm run dev
 ```
 
 The app will be accessible at http://localhost:3000.
