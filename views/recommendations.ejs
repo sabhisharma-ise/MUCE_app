@@ -13,7 +13,7 @@
 
   <div class="parallax"></div>
 
-  <h2 class="heading">Music Recommendations</h2>
+  <h2 class="heading2">Music Recommendations</h2>
 
   <div class="content">
 
@@ -38,6 +38,10 @@
     else { %>
       <h3>No recommendations found.</h3>
     <% } %>
+
+    <form action="/getRecommendations" method="GET">
+      <button class="submitBtn" type="submit">Back</button>
+    </form>   
 
   </div>
 

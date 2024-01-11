@@ -111,7 +111,7 @@ h1, h2 {
 }
 
 /* Styles for personalizedMusic.ejs */
-.heading {
+.heading1 {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -119,6 +119,7 @@ h1, h2 {
     text-align: center;
     z-index: 1; /* Place it above the background */
 }
+
 .content {
     position: absolute;
     top: 50%;
@@ -216,4 +217,20 @@ button:hover {
     margin-top: 150px;
     display: flex;
     gap: 26px; /* Adjust the gap between iframes as needed */
+}
+
+/* Styles for personalizedMusic.ejs */
+.heading2 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Place it above the background */
+}
+
+
+.submitBtn {
+  height: 35px;
+  font-size: 12pt;
 }

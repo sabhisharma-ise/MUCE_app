@@ -3,15 +3,11 @@ const mysql = require('mysql');
 
 require('dotenv').config();
 
-const db_user = process.env.DB_User;
-const db_pass = process.env.DB_Pass;
-const db_project = process.env.DB_Project;
-
 var con = mysql.createConnection({
   host: "localhost",
-  user: db_user,
-  password: db_pass,
-  database: db_project
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 });
 
 const app = express();
@@ -37,9 +33,11 @@ app.post('/getRecommendations', (req, res) => {
     if (err) throw err;
     console.log("Connected!");
 
+    query = `SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
+    spotify_link AS Spotify FROM songs WHERE artist = ${inputArtist} AND genre = ${inputGenre};`
+
     // SQL Query
-    con.query(`SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
-    spotify_link AS Spotify FROM songs WHERE artist = '${inputArtist}' AND genre = '${inputGenre}';`, async function (err, result, fields) {
+    con.query(query, async function (err, result, fields) {
       if (err) throw err;
 
       // Function to manipulate Spotify link to resemble the embed link
@@ -102,9 +100,9 @@ app.post('/getRecommendations', (req, res) => {
       if (err) { console.log("Error ending the connection:", err); }
       con = mysql.createConnection({
         host: "localhost",
-        user: db_user,
-        password: db_pass,
-        database: db_project
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME
       });
     });
   });

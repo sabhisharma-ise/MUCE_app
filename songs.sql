@@ -23,7 +23,7 @@ VALUES
     ('Sicko Mode', 'Travis Scott', 'Rap', '2018-08-03', '05:12:00', 'Astroworld', 'https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h?si=bf2c29a51e85476d'),
     ('Billie Jean', 'Michael Jackson', 'Pop', '1982-01-02', '04:54:00', 'Thriller', 'https://open.spotify.com/track/5ChkMS8OtdzJeqyybCc9R5?si=499d494b15a5442d'),
     ('Stormy Monday', 'T-Bone Walker', 'Blues', '1947-08-13', '03:00:00', 'T-Bone Blues', 'https://open.spotify.com/track/1WNMBK7DJlOLhUL5Wn6b2Y?si=8583b0bf8fe042d0'),
-    ('Sweet Child o\' Mine', 'Guns N\' Roses', 'Hard Rock', '1987-07-21', '05:56:00', 'Appetite for Destruction', 'https://open.spotify.com/track/7o2CTH4ctstm8TNelqjb51?si=6fef75ff6c0a4d15'),
+    ('Sweet Child o'' Mine', 'Guns N'' Roses', 'Hard Rock', '1987-07-21', '05:56:00', 'Appetite for Destruction', 'https://open.spotify.com/track/7o2CTH4ctstm8TNelqjb51?si=6fef75ff6c0a4d15'),
     ('Autumn Leaves', 'Nat King Cole', 'Vocal Jazz', '1956-03-01', '02:37:00', 'The Nat King Cole Story', 'https://open.spotify.com/track/1xMXAo8bygnkXwq3r8DBsT?si=1ae6ee55b3ce4e2a'),
     ('Empire State of Mind', 'Jay-Z ft. Alicia Keys', 'Hip-Hop', '2009-10-20', '04:37:00', 'The Blueprint 3', 'https://open.spotify.com/track/2igwFfvr1OAGX9SKDCPBwO?si=d51550c47fd4447f'),
     ('Like a Prayer', 'Madonna', 'Pop', '1989-03-03', '05:39:00', 'Like a Prayer', 'https://open.spotify.com/track/1z3ugFmUKoCzGsI6jdY4Ci?si=694d665d7fd04957'),
