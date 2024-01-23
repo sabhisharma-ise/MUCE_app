@@ -145,7 +145,7 @@ h1, h2 {
 /* Styles for personalizedMusic.ejs */
 .heading1 {
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -244,6 +244,7 @@ button:hover {
     transform: translateY(4px);
 }
 
+
 /* iFrame: To display side-by-side */
 .iframe-container {
     margin-top: 50px;
@@ -254,7 +255,7 @@ button:hover {
 /* Styles for personalizedMusic.ejs */
 .heading2 {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -265,4 +266,65 @@ button:hover {
   margin-top: 30px;
   height: 33px;
   font-size: 11pt;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Your mobile styles here */
+  .heading1 {
+    font-size: 250%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Place it above the background */
+  }
+
+  .restart {
+    display: block;
+  }
+
+  label {
+    color: rgb(250, 230, 230);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    /* display: block; */
+
+    /* margin-top: 20px; */
+  }
+
+  /* Apply styles to select element (dropdown) */
+  select {
+      height: 25px;
+      font-size: 11pt;
+
+      border: none;
+      outline: none;
+      background-color: rgba(255, 223, 194, 0.997);
+      border-radius: 16px 0px 16px 0px;
+      border-bottom: 4px solid #3e3c7c;
+      color: #313131;
+      font-weight: 400;
+      transition: 0.2s ease-out;
+      /* padding-block: 3px; */
+      /* padding-inline: 10px; */
+
+      /* margin: 10px 0 10px 10px; */
+  }
+
+  .submitBtn {
+    margin-top: 15px;
+    height: 33px;
+    font-size: 11pt;
+  }
+
+    .heading2 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1; /* Place it above the background */
+    }
 }
