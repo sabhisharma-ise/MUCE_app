@@ -1,3 +1,9 @@
+-- Create the wt_project database
+CREATE DATABASE wt_project;
+
+-- Use the wt_project database
+USE wt_project;
+
 -- Create the songs table
 CREATE TABLE songs (
     song_id INT PRIMARY KEY AUTO_INCREMENT,
