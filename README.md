@@ -19,33 +19,32 @@ Welcome to the Music Recommendation App! This Node.js and Express project allows
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-music-recommendation-app.git 
-   cd your-music-recommendation-app
+   git clone https://github.com/your-username/music-recommendation-app.git 
+   cd music-recommendation-app
    ```
 
 2. **Install dependencies:**
 
     ```bash
     npm install
+    npm install express mysql dotenv ejs
     ```
 
 3. **Set up the MySQL database:**
 
-- Create a MySQL database named *my-project*.
-- Import the songs.sql file into the *my-project* database.
+- Create a MySQL database called as `wt_project`
+- Run the `songs.sql` queries in a MySQL command-line client
 
 4. **Configure the database connection:**
 
-- Open the app.js file.
-- Update the database connection details:
+- Create a new file `.env` in the same directory
+- Add the database connection details in the `.env` file
 ```bash
-const con = mysql.createConnection({
-  host: 'localhost',
-  user: 'your-username',
-  password: 'your-password',
-  database: 'my-project',
-  port: 'port-no'
-});
+DB_HOST = 'localhost'
+DB_USER = 'root'
+DB_PASSWORD = 'your-password'
+DB_NAME = 'wt_project'
+DB_PORT = 3306
 ```
 
 5. **Run the application:**
