@@ -1,6 +1,6 @@
 # Music Recommendation App
 
-Welcome to the Music Recommendation App! This Node.js and Express project allows users to discover new songs based on their preferred genre and artist.
+Welcome to the Music Recommendation App! This Node.js and Express project allows users to discover new songs. It provides personalized music recommendations based on user input of genre and artist.
 
 ## Project Structure
 
@@ -8,6 +8,14 @@ Welcome to the Music Recommendation App! This Node.js and Express project allows
     - `index.html`: Main HTML file for the application home page.
 - `views/`: Folder containing ejs files
 - `app.js`: Server file containing the main logic for handling HTTP requests, integrating with the MySQL Database, and serving static files.
+
+## Files Included
+
+- `app.js`: This file contains the main application logic. It sets up the Express.js server, handles routes, connects to the MySQL database, and renders EJS templates.
+- `songs.sql`: This SQL script file contains the schema definition and sample data for the `songs` table, which stores information about songs including title, artist, genre, release date, duration, album, and Spotify link.
+- `personalizedMusic.ejs`: This EJS template file contains the HTML markup for the personalized music recommendation form. It allows users to select a genre and artist to get recommendations.
+- `recommendations.ejs`: This EJS template file contains the HTML markup for displaying the music recommendations. It dynamically generates Spotify iframes for each recommended song.
+- `index.html`: This HTML file contains the landing page for the application. It provides links to different genres of music.
 
 ## Features
 
