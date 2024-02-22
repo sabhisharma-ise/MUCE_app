@@ -74,8 +74,6 @@ body, html {
             background-attachment: scroll;
           }
 
-/* Changes made by Sabhi in Styles of MUCE.html*/
-
 .clickable-text {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5); /* Background color with 50% opacity */
@@ -263,7 +261,7 @@ button:hover {
 }
 
 .submitBtn {
-  margin-top: 30px;
+  margin-top: 40px;
   height: 33px;
   font-size: 11pt;
 }
@@ -327,4 +325,19 @@ button:hover {
       text-align: center;
       z-index: 1; /* Place it above the background */
     }
+}
+
+/* For multiple recommended embeds */
+.iframe-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Each row contains three equal-width columns */
+  grid-gap: 20px; /* Adjust the gap between iframes */
+  justify-items: center; /* Center iframes horizontally */
+}
+
+/* Adjust iframe width to fit within each column */
+.iframe-container iframe {
+  width: 100%;
+  max-width: 300px; /* Adjust maximum width as needed */
 }

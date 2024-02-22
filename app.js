@@ -35,7 +35,9 @@ app.post('/getRecommendations', (req, res) => {
     console.log("Connected!");
 
     query = `SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
-    spotify_link AS Spotify FROM songs WHERE artist = '${inputArtist}' AND genre = '${inputGenre}';`
+    spotify_link AS Spotify 
+    FROM songs 
+    WHERE artist = '${inputArtist}' AND genre = '${inputGenre}';`
 
     // SQL Query
     con.query(query, async function (err, result, fields) {
