@@ -1,9 +1,21 @@
-const express = require('express');
-const mysql = require('mysql');
-
+// Load environment variables
 require('dotenv').config();
 
-var con = mysql.createConnection({
+// Import dependencies
+const express = require('express');
+const mysql = require('mysql');
+const path = require('path');
+
+// Create and configure Express app
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Create MySQL connection
+const createConnection = () => mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
@@ -11,15 +23,9 @@ var con = mysql.createConnection({
   port: process.env.DB_PORT
 });
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.set('view engine', 'ejs');
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static( __dirname + "/public/" ));
-
+// Route handlers
 app.get('/', (req, res) => {
-  res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+  res.sendFile('index.html', { root: path.join(__dirname, 'public') });
 });
 
 app.get('/getRecommendations', (req, res) => {
@@ -27,91 +33,53 @@ app.get('/getRecommendations', (req, res) => {
 });
 
 app.post('/getRecommendations', (req, res) => {
-  const inputGenre = req.body.genre;
-  const inputArtist = req.body.artist;
+  const { genre, artist } = req.body;
 
-  con.connect(function (err) {
-    if (err) throw err;
-    console.log("Connected!");
+  const con = createConnection();
+  con.connect(err => {
+    if (err) {
+      console.error('Error connecting to the database:', err);
+      return res.status(500).send('Database connection error');
+    }
 
-    query = `SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
-    spotify_link AS Spotify 
-    FROM songs 
-    WHERE artist = '${inputArtist}' AND genre = '${inputGenre}';`
+    console.log("Connected to the database");
 
-    // SQL Query
-    con.query(query, async function (err, result, fields) {
-      if (err) throw err;
+    const query = `
+      SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
+      spotify_link AS Spotify 
+      FROM songs 
+      WHERE artist = ? AND genre = ?;
+    `;
 
-      // Function to manipulate Spotify link to resemble the embed link
-      // const link = result[0].Spotify;
-      // const parts = link.split('?si=');
-      // const baseLink = parts[0];
-      // const queryParameters = parts[1];
-      // const newLink = `${baseLink.replace('/track/', '/embed/track/')}` + `?utm_source=generator`;
-
-      // console.log(newLink);
-
-      // Check if there is at least one result
-      if (result.length > 0) {
-
-        // Create the recommendations array
-        const recommendations = result.map(song => {
-          // Function to manipulate Spotify link to resemble the embed link
-          const link = song.Spotify;
-          const parts = link.split('?si=');
-          const baseLink = parts[0];
-          const queryParameters = parts[1];
-          const newLink = `${baseLink.replace('/track/', '/embed/track/')}` + `?utm_source=generator`;
-
-          return {
-            Title: song.Title,
-            Artist: song.Artist,
-            Genre: song.Genre,
-            'Release Date': song['Release Date'],
-            Duration: song.Duration,
-            Album: song.Album,
-            Spotify: song.Spotify,
-            'Spotify Embed': newLink
-          };
-        });
-
-        // Create the recommendations object
-        // const recommendations = [
-        //   {
-        //     Title: result[0].Title,
-        //     Artist: result[0].Artist,
-        //     Genre: result[0].Genre,
-        //     'Release Date': result[0]['Release Date'],
-        //     Duration: result[0].Duration,
-        //     Album: result[0].Album,
-        //     Spotify: result[0].Spotify,
-        //     'Spotify Embed': newLink
-        //   },
-        // ];
-
-        // Render the recommendations.ejs page and pass the recommendations data
-        res.render('recommendations', { recommendations });
-      } else {
-        // No recommendations found
-        res.render('recommendations', { recommendations: [] });
+    // Used parameter binding (? placeholders) in the SQL query to prevent SQL injection.
+    con.query(query, [artist, genre], (err, result) => {
+      if (err) {
+        console.error('Error executing query:', err);
+        return res.status(500).send('Query execution error');
       }
+
+      // Converting spotify link to embed link
+      const recommendations = result.map(song => {
+        const parts = song.Spotify.split('?si=');
+        const baseLink = parts[0];
+        const newLink = `${baseLink.replace('/track/', '/embed/track/')}?utm_source=generator`;
+
+        return {
+          ...song,
+          'Spotify Embed': newLink
+        };
+      });
+
+      res.render('recommendations', { recommendations });
     });
 
-    // Reconnect in order to prevent the error: "Cannot enqueue Handshake after invoking quit"
-    con.end(function (err) {
-      if (err) { console.log("Error ending the connection:", err); }
-      con = mysql.createConnection({
-        host: process.env.DB_HOST,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME,
-        port: process.env.DB_PORT
-      });
+    con.end(err => {
+      if (err) console.error('Error ending the connection:', err);
     });
   });
 });
 
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
