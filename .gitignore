@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Migrate SQL to Mongo file
+migrate_sql_to_mongo.py
