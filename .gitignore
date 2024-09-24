@@ -130,4 +130,7 @@ dist
 .pnp.*
 
 # Migrate SQL to Mongo file
-migrate_sql_to_mongo.py
+migration/
+
+# Virtual Env
+my-venv/

@@ -1,0 +1,756 @@
+[{
+  "song_id": 5,
+  "title": "Radio Ga Ga",
+  "artist": "Queen",
+  "genre": "Rock",
+  "duration": "5:44:00",
+  "album": "The Works",
+  "spotify_link": "https://open.spotify.com/track/1nQRg9q9uwALGzouOX5OyQ?si=1b4e249bfd4048ec"
+},
+{
+  "song_id": 6,
+  "title": "Somebody to Love",
+  "artist": "Queen",
+  "genre": "Rock",
+  "duration": "4:56:00",
+  "album": "A Day at the Races",
+  "spotify_link": "https://open.spotify.com/track/5txoZyuAmtCfmDjUCEphWm?si=8147a7efa4464189"
+},
+{
+  "song_id": 4,
+  "title": "Under Pressure",
+  "artist": "Queen",
+  "genre": "Rock",
+  "duration": "4:04:00",
+  "album": "Hot Space",
+  "spotify_link": "https://open.spotify.com/track/7hQJA50XrCWABAu5v6QZ4i?si=13b9d4d05dc14f7a"
+},
+{
+  "song_id": 2,
+  "title": "Bohemian Rhapsody",
+  "artist": "Queen",
+  "genre": "Rock",
+  "duration": "5:55:00",
+  "album": "A Night at the Opera",
+  "spotify_link": "https://open.spotify.com/track/6l8GvAyoUZwWDgF1e4822w?si=55ad70967dd942b3"
+},
+{
+  "song_id": 3,
+  "title": "We Will Rock You",
+  "artist": "Queen",
+  "genre": "Rock",
+  "duration": "2:01:00",
+  "album": "News of the World",
+  "spotify_link": "https://open.spotify.com/track/54flyrjcdnQdco7300avMJ?si=d13b8947babb439e"
+},
+{
+  "song_id": 8,
+  "title": "Take Five",
+  "artist": "Dave Brubeck Quartet",
+  "genre": "Jazz",
+  "duration": "5:24:00",
+  "album": "Time Out",
+  "spotify_link": "https://open.spotify.com/track/5UbLKRX1qVROlwDFOooEvG?si=5d3f9a7a3ee14db1"
+},
+{
+  "song_id": 16,
+  "title": "Love the Way You Lie",
+  "artist": "Eminem",
+  "genre": "Rap",
+  "duration": "4:23:00",
+  "album": "Recovery",
+  "spotify_link": "https://open.spotify.com/track/15JINEqzVMv3SvJTAXAKED?si=35110d9a399e4b52"
+},
+{
+  "song_id": 17,
+  "title": "Without Me",
+  "artist": "Eminem",
+  "genre": "Rap",
+  "duration": "4:50:00",
+  "album": "The Eminem Show",
+  "spotify_link": "https://open.spotify.com/track/7lQ8MOhq6IN2w8EYcFNSUk?si=10a7e6479fc64a83"
+},
+{
+  "song_id": 23,
+  "title": "Man in the Mirror",
+  "artist": "Michael Jackson",
+  "genre": "Pop",
+  "duration": "5:19:00",
+  "album": "Bad",
+  "spotify_link": "https://open.spotify.com/track/2u2udGmop1z67EPpr91km7?si=9acd65b03e3944be"
+},
+{
+  "song_id": 7,
+  "title": "Don't Stop Me Now",
+  "artist": "Queen",
+  "genre": "Rock",
+  "duration": "3:29:00",
+  "album": "Jazz",
+  "spotify_link": "https://open.spotify.com/track/0DrDcqWpokMlhKYJSwoT4B?si=ea35f85232784ff8"
+},
+{
+  "song_id": 18,
+  "title": "Rap God",
+  "artist": "Eminem",
+  "genre": "Rap",
+  "duration": "6:03:00",
+  "album": "The Marshall Mathers LP2",
+  "spotify_link": "https://open.spotify.com/track/6or1bKJiZ06IlK0vFvY75k?si=dfca22097caf49ff"
+},
+{
+  "song_id": 32,
+  "title": "Hotel California",
+  "artist": "Eagles",
+  "genre": "Rock",
+  "duration": "6:30:00",
+  "album": "Hotel California",
+  "spotify_link": "https://open.spotify.com/track/4GkOfUKUqDDgoeiov8Uqyi?si=6356229e53854339"
+},
+{
+  "song_id": 15,
+  "title": "Stan",
+  "artist": "Eminem",
+  "genre": "Rap",
+  "duration": "6:44:00",
+  "album": "The Marshall Mathers LP",
+  "spotify_link": "https://open.spotify.com/track/3UmaczJpikHgJFyBTAJVoz?si=4b119c4aa9bb4f52"
+},
+{
+  "song_id": 10,
+  "title": "Unsquare Dance",
+  "artist": "Dave Brubeck Quartet",
+  "genre": "Jazz",
+  "duration": "2:02:00",
+  "album": "Time Further Out",
+  "spotify_link": "https://open.spotify.com/track/2VUo8O3ymKRYNgj97ZG2kM?si=fd63c35f827b435f"
+},
+{
+  "song_id": 13,
+  "title": "It's a Raggy Waltz",
+  "artist": "Dave Brubeck Quartet",
+  "genre": "Jazz",
+  "duration": "5:12:00",
+  "album": "Time Further Out",
+  "spotify_link": "https://open.spotify.com/track/1LH3R7OkZFtlALGtmpGXPb?si=b468d44d5271403c"
+},
+{
+  "song_id": 25,
+  "title": "Black or White",
+  "artist": "Michael Jackson",
+  "genre": "Pop",
+  "duration": "3:22:00",
+  "album": "Dangerous",
+  "spotify_link": "https://open.spotify.com/track/7EsjkelQuoUlJXEw7SeVV4?si=0f71946c647a409d"
+},
+{
+  "song_id": 33,
+  "title": "Take It Easy",
+  "artist": "Eagles",
+  "genre": "Rock",
+  "duration": "3:32:00",
+  "album": "Eagles",
+  "spotify_link": "https://open.spotify.com/track/4yugZvBYaoREkJKtbG08Qr?si=187e7d88b2c94508"
+},
+{
+  "song_id": 38,
+  "title": "So What",
+  "artist": "Miles Davis",
+  "genre": "Jazz",
+  "duration": "9:22:00",
+  "album": "Kind of Blue",
+  "spotify_link": "https://open.spotify.com/track/7ILXfN4kJ3hYLitnPjOsLi?si=878b55cfb9c4441b"
+},
+{
+  "song_id": 9,
+  "title": "Blue Rondo à la Turk",
+  "artist": "Dave Brubeck Quartet",
+  "genre": "Jazz",
+  "duration": "6:43:00",
+  "album": "Time Out",
+  "spotify_link": "https://open.spotify.com/track/36MLLjFug6TJYNODUVR7av?si=3ca767aab22b4269"
+},
+{
+  "song_id": 12,
+  "title": "Three to Get Ready",
+  "artist": "Dave Brubeck Quartet",
+  "genre": "Jazz",
+  "duration": "5:24:00",
+  "album": "Time Out",
+  "spotify_link": "https://open.spotify.com/track/3k5O0RKO6zEqu9JJ7JqxDX?si=4d8721d9c7564ac9"
+},
+{
+  "song_id": 34,
+  "title": "Desperado",
+  "artist": "Eagles",
+  "genre": "Rock",
+  "duration": "3:33:00",
+  "album": "Desperado",
+  "spotify_link": "https://open.spotify.com/track/2TjnCxxQRYn56Ye8gkUKiW?si=e631e47bc6d1433a"
+},
+{
+  "song_id": 22,
+  "title": "Beat It",
+  "artist": "Michael Jackson",
+  "genre": "Pop",
+  "duration": "4:18:00",
+  "album": "Thriller",
+  "spotify_link": "https://open.spotify.com/track/1OOtq8tRnDM8kG2gqUPjAj?si=ef38f7cd0ae74342"
+},
+{
+  "song_id": 31,
+  "title": "Preachin' Blues (Up Jumped the Devil)",
+  "artist": "Robert Johnson",
+  "genre": "Blues",
+  "duration": "2:53:00",
+  "album": "King of the Delta Blues Singers",
+  "spotify_link": "https://open.spotify.com/track/4pEZg4zQFcJ1jdboMYTYf9?si=30a6af8927ce4b33"
+},
+{
+  "song_id": 20,
+  "title": "Thriller",
+  "artist": "Michael Jackson",
+  "genre": "Pop",
+  "duration": "5:57:00",
+  "album": "Thriller",
+  "spotify_link": "https://open.spotify.com/track/3S2R0EVwBSAVMd5UMgKTL0?si=1321d6b5a17c4a1f"
+},
+{
+  "song_id": 30,
+  "title": "Come On in My Kitchen",
+  "artist": "Robert Johnson",
+  "genre": "Blues",
+  "duration": "2:51:00",
+  "album": "King of the Delta Blues Singers",
+  "spotify_link": "https://open.spotify.com/track/10W125nMbncRGcXRBoACOx?si=d3f2cbebcd414efb"
+},
+{
+  "song_id": 14,
+  "title": "Lose Yourself",
+  "artist": "Eminem",
+  "genre": "Rap",
+  "duration": "5:26:00",
+  "album": "8 Mile Soundtrack",
+  "spotify_link": "https://open.spotify.com/track/7MJQ9Nfxzh8LPZ9e9u68Fq?si=c6f8ace87b07494e"
+},
+{
+  "song_id": 36,
+  "title": "Peaceful Easy Feeling",
+  "artist": "Eagles",
+  "genre": "Rock",
+  "duration": "4:16:00",
+  "album": "Eagles",
+  "spotify_link": "https://open.spotify.com/track/40h65HAR8COEoqkMwUUQHu?si=24aac54a164a44df"
+},
+{
+  "song_id": 11,
+  "title": "Strange Meadow Lark",
+  "artist": "Dave Brubeck Quartet",
+  "genre": "Jazz",
+  "duration": "7:22:00",
+  "album": "Time Out",
+  "spotify_link": "https://open.spotify.com/track/6HvyFdP5JrCQdmxq2qi7MC?si=928893c3e6054b15"
+},
+{
+  "song_id": 27,
+  "title": "Sweet Home Chicago",
+  "artist": "Robert Johnson",
+  "genre": "Blues",
+  "duration": "2:57:00",
+  "album": "King of the Delta Blues Singers",
+  "spotify_link": "https://open.spotify.com/track/1guIEbEw6v69ubNOuH9Aug?si=74dc757873ef439e"
+},
+{
+  "song_id": 28,
+  "title": "Hell Hound on My Trail",
+  "artist": "Robert Johnson",
+  "genre": "Blues",
+  "duration": "2:35:00",
+  "album": "King of the Delta Blues Singers",
+  "spotify_link": "https://open.spotify.com/track/5xjG7nV5ncQAHkuifsz4v3?si=71ec9062f453430c"
+},
+{
+  "song_id": 41,
+  "title": "Freddie Freeloader",
+  "artist": "Miles Davis",
+  "genre": "Jazz",
+  "duration": "9:49:00",
+  "album": "Kind of Blue",
+  "spotify_link": "https://open.spotify.com/track/1UOH2i8z5xitX8PgVUH6nU?si=603a551e201a4706"
+},
+{
+  "song_id": 42,
+  "title": "Flamenco Sketches",
+  "artist": "Miles Davis",
+  "genre": "Jazz",
+  "duration": "9:25:00",
+  "album": "Kind of Blue",
+  "spotify_link": "https://open.spotify.com/track/1H4ncCS0zFOcTiS7Z0eXAB?si=8127e04292714b18"
+},
+{
+  "song_id": 40,
+  "title": "Blue in Green",
+  "artist": "Miles Davis",
+  "genre": "Jazz",
+  "duration": "5:37:00",
+  "album": "Kind of Blue",
+  "spotify_link": "https://open.spotify.com/track/5Q427qiOu3zUMjgUrTdIR9?si=d9fe5aaf03564d0c"
+},
+{
+  "song_id": 37,
+  "title": "New Kid in Town",
+  "artist": "Eagles",
+  "genre": "Rock",
+  "duration": "5:04:00",
+  "album": "Hotel California",
+  "spotify_link": "https://open.spotify.com/track/5MC3xdlx9DFop1Y4J1yDbE?si=5690bbf66f1c41f9"
+},
+{
+  "song_id": 44,
+  "title": "Sicko Mode",
+  "artist": "Travis Scott",
+  "genre": "Rap",
+  "duration": "5:12:00",
+  "album": "Astroworld",
+  "spotify_link": "https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h?si=bf2c29a51e85476d"
+},
+{
+  "song_id": 35,
+  "title": "Life in the Fast Lane",
+  "artist": "Eagles",
+  "genre": "Rock",
+  "duration": "4:46:00",
+  "album": "Hotel California",
+  "spotify_link": "https://open.spotify.com/track/6gXrEUzibufX9xYPk3HD5p?si=2dcecb0f00714482"
+},
+{
+  "song_id": 50,
+  "title": "Stormy Monday",
+  "artist": "T-Bone Walker",
+  "genre": "Blues",
+  "duration": "3:00:00",
+  "album": "T-Bone Blues",
+  "spotify_link": "https://open.spotify.com/track/1WNMBK7DJlOLhUL5Wn6b2Y?si=8583b0bf8fe042d0"
+},
+{
+  "song_id": 19,
+  "title": "The Real Slim Shady",
+  "artist": "Eminem",
+  "genre": "Rap",
+  "duration": "4:44:00",
+  "album": "The Marshall Mathers LP",
+  "spotify_link": "https://open.spotify.com/track/3yfqSUWxFvZELEM4PmlwIR?si=d1959f7ca8354953"
+},
+{
+  "song_id": 43,
+  "title": "Summertime",
+  "artist": "Miles Davis",
+  "genre": "Jazz",
+  "duration": "3:19:00",
+  "album": "Porgy and Bess",
+  "spotify_link": "https://open.spotify.com/track/25H0Wd1ugPRXGM2LlpjVXM?si=54118e1384a6418f"
+},
+{
+  "song_id": 39,
+  "title": "All Blues",
+  "artist": "Miles Davis",
+  "genre": "Jazz",
+  "duration": "11:34:00",
+  "album": "Kind of Blue",
+  "spotify_link": "https://open.spotify.com/track/0tYgqYrAgGTyi5GhYKsIkP?si=70fd5a7bd7684997"
+},
+{
+  "song_id": 24,
+  "title": "Smooth Criminal",
+  "artist": "Michael Jackson",
+  "genre": "Pop",
+  "duration": "4:17:00",
+  "album": "Bad",
+  "spotify_link": "https://open.spotify.com/track/4MAns6c2qmc0vcF1gLEvpu?si=bdeb596b90504883"
+},
+{
+  "song_id": 49,
+  "title": "Highest in the Room",
+  "artist": "Travis Scott",
+  "genre": "Rap",
+  "duration": "2:55:00",
+  "album": "Highest in the Room",
+  "spotify_link": "https://open.spotify.com/track/3eekarcy7kvN4yt5ZFzltW?si=21a0398eab034d3d"
+},
+{
+  "song_id": 47,
+  "title": "Butterfly Effect",
+  "artist": "Travis Scott",
+  "genre": "Rap",
+  "duration": "3:10:00",
+  "album": "Astroworld",
+  "spotify_link": "https://open.spotify.com/track/2cYqizR4lgvp4Qu6IQ3qGN?si=f56175d55805457e"
+},
+{
+  "song_id": 52,
+  "title": "T-Bone Shuffle",
+  "artist": "T-Bone Walker",
+  "genre": "Blues",
+  "duration": "2:58:00",
+  "album": "The Complete Recordings of T-Bone Walker 1940-1954",
+  "spotify_link": "https://open.spotify.com/track/6bl7UHHcx1OY9tbvvnSssc?si=a8e27e146a2146cc"
+},
+{
+  "song_id": 21,
+  "title": "Billie Jean",
+  "artist": "Michael Jackson",
+  "genre": "Pop",
+  "duration": "4:54:00",
+  "album": "Thriller",
+  "spotify_link": "https://open.spotify.com/track/5ChkMS8OtdzJeqyybCc9R5?si=499d494b15a5442d"
+},
+{
+  "song_id": 55,
+  "title": "Every Day I Have the Blues",
+  "artist": "T-Bone Walker",
+  "genre": "Blues",
+  "duration": "2:48:00",
+  "album": "The Complete Recordings of T-Bone Walker 1940-1954",
+  "spotify_link": "https://open.spotify.com/track/5xKzgfFBzZhMdwMVBX0CgW?si=68a885528e8b48be"
+},
+{
+  "song_id": 46,
+  "title": "Antidote",
+  "artist": "Travis Scott",
+  "genre": "Rap",
+  "duration": "4:23:00",
+  "album": "Rodeo",
+  "spotify_link": "https://open.spotify.com/track/1wHZx0LgzFHyeIZkUydNXq?si=2d2ce68e103f49c5"
+},
+{
+  "song_id": 51,
+  "title": "Call It Stormy Monday (But Tuesday Is Just as Bad)",
+  "artist": "T-Bone Walker",
+  "genre": "Blues",
+  "duration": "3:02:00",
+  "album": "T-Bone Blues",
+  "spotify_link": "https://open.spotify.com/track/7uMiAVsZy9Iash5gPsoTxe?si=e0e18c3b11bf40ce"
+},
+{
+  "song_id": 57,
+  "title": "Welcome to the Jungle",
+  "artist": "Guns N' Roses",
+  "genre": "Hard Rock",
+  "duration": "4:33:00",
+  "album": "Appetite for Destruction",
+  "spotify_link": "https://open.spotify.com/track/0bVtevEgtDIeRjCJbK3Lmv?si=bda4ed90c105481f"
+},
+{
+  "song_id": 61,
+  "title": "Don't Cry",
+  "artist": "Guns N' Roses",
+  "genre": "Hard Rock",
+  "duration": "4:44:00",
+  "album": "Use Your Illusion I",
+  "spotify_link": "https://open.spotify.com/track/2N2yrmodOnVF10mKvItC9P?si=36c204a6a1c8493c"
+},
+{
+  "song_id": 26,
+  "title": "Crossroads",
+  "artist": "Robert Johnson",
+  "genre": "Blues",
+  "duration": "2:59:00",
+  "album": "Cross Road Blues",
+  "spotify_link": "https://open.spotify.com/track/1TrGdXSgiBm8W68D2K1COG?si=c4ad7421a89743dd"
+},
+{
+  "song_id": 53,
+  "title": "Mean Old World",
+  "artist": "T-Bone Walker",
+  "genre": "Blues",
+  "duration": "3:01:00",
+  "album": "The Complete Recordings of T-Bone Walker 1940-1954",
+  "spotify_link": "https://open.spotify.com/track/3gg0xEc2b4eEbYySLmfFU1?si=3d33f09c81d94f42"
+},
+{
+  "song_id": 60,
+  "title": "Knockin' on Heaven's Door",
+  "artist": "Guns N' Roses",
+  "genre": "Hard Rock",
+  "duration": "5:36:00",
+  "album": "Use Your Illusion II",
+  "spotify_link": "https://open.spotify.com/track/4JiEyzf0Md7KEFFGWDDdCr?si=8f0ca03e26294793"
+},
+{
+  "song_id": 59,
+  "title": "Paradise City",
+  "artist": "Guns N' Roses",
+  "genre": "Hard Rock",
+  "duration": "6:46:00",
+  "album": "Appetite for Destruction",
+  "spotify_link": "https://open.spotify.com/track/6eN1f9KNmiWEhpE2RhQqB5?si=841e4e13c17d42f0"
+},
+{
+  "song_id": 48,
+  "title": "Stargazing",
+  "artist": "Travis Scott",
+  "genre": "Rap",
+  "duration": "4:30:00",
+  "album": "Astroworld",
+  "spotify_link": "https://open.spotify.com/track/7wBJfHzpfI3032CSD7CE2m?si=2a617050e1814100"
+},
+{
+  "song_id": 67,
+  "title": "When I Fall in Love",
+  "artist": "Nat King Cole",
+  "genre": "Vocal Jazz",
+  "duration": "3:10:00",
+  "album": "Love Is the Thing",
+  "spotify_link": "https://open.spotify.com/track/6s6h2XK7Nl8lEcTzr7ezeB?si=287d0879fda548fb"
+},
+{
+  "song_id": 66,
+  "title": "Route 66",
+  "artist": "Nat King Cole",
+  "genre": "Vocal Jazz",
+  "duration": "3:02:00",
+  "album": "The Nat King Cole Trio",
+  "spotify_link": "https://open.spotify.com/track/7pJEbmeP2cZxvkLbG9hhtZ?si=1042716b56c44255"
+},
+{
+  "song_id": 29,
+  "title": "Love in Vain",
+  "artist": "Robert Johnson",
+  "genre": "Blues",
+  "duration": "2:21:00",
+  "album": "King of the Delta Blues Singers",
+  "spotify_link": "https://open.spotify.com/track/5VQhZXyIcnun8WS3cg97JT?si=38bc0d29cd1442af"
+},
+{
+  "song_id": 68,
+  "title": "Empire State of Mind",
+  "artist": "Jay-Z",
+  "genre": "Hip-Hop",
+  "duration": "4:37:00",
+  "album": "The Blueprint 3",
+  "spotify_link": "https://open.spotify.com/track/2igwFfvr1OAGX9SKDCPBwO?si=d51550c47fd4447f"
+},
+{
+  "song_id": 45,
+  "title": "Goosebumps",
+  "artist": "Travis Scott",
+  "genre": "Rap",
+  "duration": "4:03:00",
+  "album": "Birds in the Trap Sing McKnight",
+  "spotify_link": "https://open.spotify.com/track/6gBFPUFcJLzWGx4lenP6h2?si=85fbde8340134899"
+},
+{
+  "song_id": 63,
+  "title": "Unforgettable",
+  "artist": "Nat King Cole",
+  "genre": "Vocal Jazz",
+  "duration": "3:29:00",
+  "album": "Unforgettable",
+  "spotify_link": "https://open.spotify.com/track/648TTtYB0bH0P8Hfy0FmkL?si=e70cafd7a93d4ab6"
+},
+{
+  "song_id": 62,
+  "title": "Autumn Leaves",
+  "artist": "Nat King Cole",
+  "genre": "Vocal Jazz",
+  "duration": "2:37:00",
+  "album": "The Nat King Cole Story",
+  "spotify_link": "https://open.spotify.com/track/1xMXAo8bygnkXwq3r8DBsT?si=1ae6ee55b3ce4e2a"
+},
+{
+  "song_id": 58,
+  "title": "November Rain",
+  "artist": "Guns N' Roses",
+  "genre": "Hard Rock",
+  "duration": "8:57:00",
+  "album": "Use Your Illusion I",
+  "spotify_link": "https://open.spotify.com/track/5Z01UMMf7V1o0MzF86s6WJ?si=e11fe50b8a6446b4"
+},
+{
+  "song_id": 64,
+  "title": "Mona Lisa",
+  "artist": "Nat King Cole",
+  "genre": "Vocal Jazz",
+  "duration": "3:26:00",
+  "album": "The Greatest Hits",
+  "spotify_link": "https://open.spotify.com/track/5dae01pKNjRQtgOeAkFzPY?si=39a610314fc045bc"
+},
+{
+  "song_id": 56,
+  "title": "Sweet Child o' Mine",
+  "artist": "Guns N' Roses",
+  "genre": "Hard Rock",
+  "duration": "5:56:00",
+  "album": "Appetite for Destruction",
+  "spotify_link": "https://open.spotify.com/track/7o2CTH4ctstm8TNelqjb51?si=6fef75ff6c0a4d15"
+},
+{
+  "song_id": 71,
+  "title": "99 Problems",
+  "artist": "Jay-Z",
+  "genre": "Hip-Hop",
+  "duration": "3:55:00",
+  "album": "The Black Album",
+  "spotify_link": "https://open.spotify.com/track/7IdFdRlCjUi6kkhbPoRfnw?si=0b79d1904f2d40c2"
+},
+{
+  "song_id": 75,
+  "title": "Vogue",
+  "artist": "Madonna",
+  "genre": "Pop",
+  "duration": "5:17:00",
+  "album": "I'm Breathless",
+  "spotify_link": "https://open.spotify.com/track/27QvYgBk0CHOVHthWnkuWt?si=239baacac95341a8"
+},
+{
+  "song_id": 70,
+  "title": "Run This Town",
+  "artist": "Jay-Z",
+  "genre": "Hip-Hop",
+  "duration": "4:27:00",
+  "album": "The Blueprint 3",
+  "spotify_link": "https://open.spotify.com/track/7LR85XLWw2yXqKBSI5brbG?si=726861adcec74429"
+},
+{
+  "song_id": 54,
+  "title": "The Hustle Is On",
+  "artist": "T-Bone Walker",
+  "genre": "Blues",
+  "duration": "2:41:00",
+  "album": "T-Bone Blues",
+  "spotify_link": "https://open.spotify.com/track/6T7hA8JdUunI1JJ2b8wI5c?si=01a88e9890334202"
+},
+{
+  "song_id": 79,
+  "title": "Into the Groove",
+  "artist": "Madonna",
+  "genre": "Pop",
+  "duration": "4:45:00",
+  "album": "Like a Virgin",
+  "spotify_link": "https://open.spotify.com/track/2m0M7YqCy4lXfedh18qd8N?si=39b6347b5cee4e11"
+},
+{
+  "song_id": 80,
+  "title": "Born Under a Bad Sign",
+  "artist": "Albert King",
+  "genre": "Electric Blues",
+  "duration": "3:31:00",
+  "album": "Born Under a Bad Sign",
+  "spotify_link": "https://open.spotify.com/track/0vDn81gdOuRxjbIwcASuiV?si=8714584d027d4c25"
+},
+{
+  "song_id": 73,
+  "title": "Izzo (H.O.V.A.)",
+  "artist": "Jay-Z",
+  "genre": "Hip-Hop",
+  "duration": "4:01:00",
+  "album": "The Blueprint",
+  "spotify_link": "https://open.spotify.com/track/4h5KBcltGefua73AUPYps7?si=6f1289708f82468a"
+},
+{
+  "song_id": 82,
+  "title": "I'll Play the Blues for You",
+  "artist": "Albert King",
+  "genre": "Electric Blues",
+  "duration": "7:21:00",
+  "album": "I'll Play the Blues for You",
+  "spotify_link": "https://open.spotify.com/track/5hF3PAQopvztFVnH4xyyQp?si=a4878fd9a00f44ed"
+},
+{
+  "song_id": 83,
+  "title": "Crosscut Saw",
+  "artist": "Albert King",
+  "genre": "Electric Blues",
+  "duration": "2:34:00",
+  "album": "Born Under a Bad Sign",
+  "spotify_link": "https://open.spotify.com/track/5ZD2nIitLb9txwpz5Avq6Q?si=e00363e001804314"
+},
+{
+  "song_id": 85,
+  "title": "As the Years Go Passing By",
+  "artist": "Albert King",
+  "genre": "Electric Blues",
+  "duration": "3:47:00",
+  "album": "Years Gone By",
+  "spotify_link": "https://open.spotify.com/track/71auWR3IZdhDv3M8RZsqIF?si=1a43ec3014c64337"
+},
+{
+  "song_id": 69,
+  "title": "Numb/Encore",
+  "artist": "Jay-Z",
+  "genre": "Hip-Hop",
+  "duration": "3:25:00",
+  "album": "Collision Course",
+  "spotify_link": "https://open.spotify.com/track/7dyluIqv7QYVTXXZiMWPHW?si=843b3aa6fa714190"
+},
+{
+  "song_id": 72,
+  "title": "Holy Grail",
+  "artist": "Jay-Z",
+  "genre": "Hip-Hop",
+  "duration": "5:38:00",
+  "album": "Magna Carta... Holy Grail",
+  "spotify_link": "https://open.spotify.com/track/1q9bLSeIlGf2xBvbOkp2Wr?si=1b61e72f72124e15"
+},
+{
+  "song_id": 74,
+  "title": "Like a Prayer",
+  "artist": "Madonna",
+  "genre": "Pop",
+  "duration": "5:39:00",
+  "album": "Like a Prayer",
+  "spotify_link": "https://open.spotify.com/track/1z3ugFmUKoCzGsI6jdY4Ci?si=694d665d7fd04957"
+},
+{
+  "song_id": 76,
+  "title": "Material Girl",
+  "artist": "Madonna",
+  "genre": "Pop",
+  "duration": "3:52:00",
+  "album": "Like a Virgin",
+  "spotify_link": "https://open.spotify.com/track/22sLuJYcvZOSoLLRYev1s5?si=bb18f2c546bc4b0b"
+},
+{
+  "song_id": 65,
+  "title": "L-O-V-E",
+  "artist": "Nat King Cole",
+  "genre": "Vocal Jazz",
+  "duration": "2:34:00",
+  "album": "L-O-V-E",
+  "spotify_link": "https://open.spotify.com/track/4QxDOjgpYtQDxxbWPuEJOy?si=d524252242b74617"
+},
+{
+  "song_id": 81,
+  "title": "The Sky Is Crying",
+  "artist": "Albert King",
+  "genre": "Electric Blues",
+  "duration": "4:40:00",
+  "album": "Born Under a Bad Sign",
+  "spotify_link": "https://open.spotify.com/track/5F1PDuoQ9ajtBnKAPVOqT4?si=b81aa1a308ef481d"
+},
+{
+  "song_id": 78,
+  "title": "Papa Don't Preach",
+  "artist": "Madonna",
+  "genre": "Pop",
+  "duration": "4:29:00",
+  "album": "True Blue",
+  "spotify_link": "https://open.spotify.com/track/0Oa9Qtd0FuhcmLi3sWTF9F?si=fc9068ff1b2f49d6"
+},
+{
+  "song_id": 84,
+  "title": "Oh, Pretty Woman",
+  "artist": "Albert King",
+  "genre": "Electric Blues",
+  "duration": "2:53:00",
+  "album": "Years Gone By",
+  "spotify_link": "https://open.spotify.com/track/1rFzuTL45nzwhcXMVW5Cr4?si=0f4631e6f0ea4cee"
+},
+{
+  "song_id": 77,
+  "title": "Hung Up",
+  "artist": "Madonna",
+  "genre": "Pop",
+  "duration": "5:36:00",
+  "album": "Confessions on a Dance Floor",
+  "spotify_link": "https://open.spotify.com/track/3850dYVgOFIXJh5U4BFEWH?si=ed39ecd024d447eb"
+}]
