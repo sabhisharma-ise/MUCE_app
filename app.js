@@ -3,7 +3,7 @@ require('dotenv').config();
 
 // Import dependencies
 const express = require('express');
-const mysql = require('mysql');
+const mongoose = require('mongoose');
 const path = require('path');
 
 // Create and configure Express app
@@ -14,14 +14,26 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Create MySQL connection
-const createConnection = () => mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT
+// Create Mongoose connection
+mongoose.connect(process.env.MONGO_URI)
+.then(() => {
+    console.log('Connected to MongoDB');
+}).catch((err) => {
+    console.log('Failed to connect to MongoDB:', err);
 });
+
+// Define the Mongoose schema for the songs
+const songSchema = new mongoose.Schema({
+    title: String,
+    artist: String,
+    genre: String,
+    duration: String,
+    album: String,
+    spotify_link: String
+});
+
+// Create the Mongoose model for the songs
+const Song = mongoose.model('Song', songSchema);
 
 // Route handlers
 app.get('/', (req, res) => {
@@ -32,51 +44,31 @@ app.get('/getRecommendations', (req, res) => {
   res.render('personalizedMusic');
 });
 
-app.post('/getRecommendations', (req, res) => {
+app.post('/getRecommendations', async (req, res) => {
   const { genre, artist } = req.body;
 
-  const con = createConnection();
-  con.connect(err => {
-    if (err) {
-      console.error('Error connecting to the database:', err);
-      return res.status(500).send('Database connection error');
-    }
-
-    console.log("Connected to the database");
-
-    const query = `
-      SELECT title AS Title, artist AS Artist, genre AS Genre, release_date AS 'Release Date', duration AS Duration, album AS Album, 
-      spotify_link AS Spotify 
-      FROM songs 
-      WHERE artist = ? AND genre = ?;
-    `;
-
-    // Used parameter binding (? placeholders) in the SQL query to prevent SQL injection.
-    con.query(query, [artist, genre], (err, result) => {
-      if (err) {
-        console.error('Error executing query:', err);
-        return res.status(500).send('Query execution error');
-      }
-
-      // Converting spotify link to embed link
-      const recommendations = result.map(song => {
-        const parts = song.Spotify.split('?si=');
-        const baseLink = parts[0];
-        const newLink = `${baseLink.replace('/track/', '/embed/track/')}?utm_source=generator`;
-
-        return {
-          ...song,
-          'Spotify Embed': newLink
-        };
-      });
-
-      res.render('recommendations', { recommendations });
+  try {
+    const recommendations = await Song.find({ artist, genre }, {
+      title: 1, artist: 1, genre: 1, release_date: 1, duration: 1, album: 1, spotify_link: 1
     });
 
-    con.end(err => {
-      if (err) console.error('Error ending the connection:', err);
+    // Converting spotify link to embed link
+    const modifiedRecommendations = recommendations.map(song => {
+      const parts = song.spotify_link.split('?si=');
+      const baseLink = parts[0];
+      const newLink = `${baseLink.replace('/track/', '/embed/track/')}?utm_source=generator`;
+
+      return {
+        ...song.toObject(),
+        'Spotify Embed': newLink
+      };
     });
-  });
+
+    res.render('recommendations', { recommendations: modifiedRecommendations });
+  } catch (err) {
+    console.error('Error executing query:', err);
+    return res.status(500).send('Query execution error');
+  }
 });
 
 // Start the server
